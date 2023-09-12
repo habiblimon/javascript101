@@ -77,3 +77,60 @@ console.log(counter) // undefind
 
 
 
+
+
+
+
+//////////////////////////////////////////////
+// **** CLass 02 ***** JS Variable, Conditions
+//////////////////////////////////////////////
+
+// link with js file with html file.
+//variable dicreal in one row 
+
+console.log("**** Class 02 ****")
+
+var personName, age, job, stuInfo;
+personName = "Habib";
+age = 29;
+job = "freelancer";
+stuInfo = "NU";
+
+//ES6+ LATEST VERSION
+//let & const
+
+
+
+console.log( personName, age, job, stuInfo);
+
+// let variable golabal & local .
+
+
+let car = "audi";
+
+{
+    let car = "BMW";
+    console.log("local : ", car);
+}
+
+console.log("global : ", car)
+
+
+// if else , else if .
+
+//dynamic sentence  javascript using -> ``  '${let/var/const}'
+
+let age2 = 18;
+let prsn = "habib";
+
+let sentence = `${prsn} is ${age2} yrs old`;
+console.log(sentence);
+
+
+
+
+
+
+
+
+
