@@ -128,6 +128,49 @@ console.log(sentence);
 
 
 
+////////////////////////////////////////////////
+//Class 03 - Loops, Numbers Methods & Conditions 
+////////////////////////////////////////////////
+console.log("****Class-03****");
+
+//if else , else if
+
+let mathMark = 65;
+let engMark = 70;
+let scienceMark =80;
+
+const avgMark = (mathMark+engMark+scienceMark)/3;
+
+console.log("Avarage Mark:", avgMark);
+
+//JavaScript Number
+
+let number = 34.34322; //floating point number or decimal
+let roundNum =53; //1,2,68, round number, natural number, integer number.
+
+let addition2 = number+roundNum;
+console.log("Result :",addition2);
+console.log("tofixed :",addition2.toFixed(2));//argument building function
+console.log("Integer / Round Number :",parseInt(addition2)); // round number
+console.log(" Round Number :",Math.round(addition2)); // round number
+console.log(" Ceil Number :",Math.ceil(addition2)); // ceil number
+console.log(" floor Number :",Math.floor(addition2)); // ceil number
+
+
+//dice roll -> 1-6
+
+let randomeNum = Math.floor(Math.random()*7); // 1 to 6-> value
+console.log("Roll a dice :",randomeNum);
+
+
+
+// javascript loop 
+// 1-100
+// for loop, while loop, 
+for (let count = 1; count<10; count++){
+    console.log(count)
+}
+
 
 
 
