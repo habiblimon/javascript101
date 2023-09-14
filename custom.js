@@ -172,6 +172,11 @@ for (let count = 1; count<10; count++){
 }
 
 
+//odd number : 1, 3, 5, 6, 7, 9, 
+//even number : 2, 4, 6, 8, 10
+
+
+
 
 
 
