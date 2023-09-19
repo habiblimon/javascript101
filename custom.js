@@ -1,6 +1,6 @@
 //class 01 JavaScrip Basicsc
 
-console.log("*** class 01 ***");
+console.log("*** class 01 / JavaScrip Basicsc ***");
 
  console.log("Hellow Javascript"); //string - 
 
@@ -88,7 +88,7 @@ console.log(counter) // undefind
 // link with js file with html file.
 //variable dicreal in one row 
 
-console.log("**** Class 02 ****")
+console.log("**** Class 02  JS Variable, Conditions ****")
 
 var personName, age, job, stuInfo;
 personName = "Habib";
@@ -131,7 +131,7 @@ console.log(sentence);
 ////////////////////////////////////////////////
 //Class 03 - Loops, Numbers Methods & Conditions 
 ////////////////////////////////////////////////
-console.log("****Class-03****");
+console.log("****Class-03  Loops, Numbers Methods & Conditions****");
 
 //if else , else if
 
@@ -168,7 +168,7 @@ console.log("Roll a dice :",randomeNum);
 // 1-100
 // for loop, while loop, 
 for (let count = 1; count<10; count++){
-    console.log(count)
+    console.log(count);
 }
 
 
@@ -176,7 +176,24 @@ for (let count = 1; count<10; count++){
 //even number : 2, 4, 6, 8, 10
 
 
+///////////////////////////////////////////
+// Class#04 (Javascript String Methods)
+//////////////////////////////////////////
 
+console.log("*** Class#04 || (Javascript String Methods) ***"); 
+
+
+//string 2 type defind
+
+let stringValue =" ";
+let nameOfUser ="Abdullah "; //count blank space.
+console.log("leaght of user :", nameOfUser.length);
+
+//Make a New string 
+let greeting ="good night";
+let newGreeting = greeting.concat(", Habib");
+
+console.log(newGreeting);
 
 
 

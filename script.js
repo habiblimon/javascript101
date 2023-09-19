@@ -1,5 +1,5 @@
 //Task 1: Hello World with Variables
-console.log("Hello");
+//console.log("Hello");
 
 var greeting = "Hello!";
 console.log(greeting);
