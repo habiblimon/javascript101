@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu using JavaScript </title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        background: #222;
+    }
+    .header{
+        display: flex;
+        padding: 40px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container{
+        max-width: 1280px;
+        margin: auto;
+        background: #222;
+        color: #fff;
+    }
+    nav ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+    nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    button{
+        padding: 14px 10px;
+        background: #fff;
+        color: #222;
+        border: none;
+        font-size: 20px;
+        border-radius: 0px 15px 0px 15px;
+        
+    }
+
+    .logo{
+        font-size: 40px;
+    }
+   
+    .mobile-nav svg{
+        color: #fff;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .mobile-sidebar{
+        position: absolute;
+        width: 40%;
+        height: 100vh;
+        background-color: #a29a9a;
+        top: 0;
+        right: 0;
+    }
+    .mobile-sidebar ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .mobile-sidebar a{
+       font-size: 40px;
+    }
+
+    .mobile-btn{
+     
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    .close-icon{
+        width: 40px;
+        position: absolute;
+        right: 4px;
+        top: 5px;
+        color: red;
+        cursor: pointer;
+    }
+
+    .mobile-sidebar{
+        display: none;
+    }
+    .close-icon{
+        display: none;
+    }
+    .mobile-btn{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+
+
+
+    @media (max-width:700px) {
+        nav{
+            /* display: block; */
+        }
+      
+        .mobile-nav{
+            display: block;
+            color: #fff;
+            width: 40px;
+        }
+        button{
+            display: none;
+        }
+        .close-icon{
+            display: block;
+        }
+    }
+
+
+  
+</style>
+<body>
+
+    <header>
+        <div class="container header">
+            <div class="logo">
+                LOGO
+            </div>
+            <nav>
+                <div class="close-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                      
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+                <button class="mobile-btn">Learn More.</button>
+            </nav>
+            <button>Learn More.</button>
+            <div class="mobile-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                  </svg>
+                  
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>

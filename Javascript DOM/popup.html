@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript popup</title>
+</head>
+<body>
+    <style>
+        .overlay{
+            background-color: #e9e0e0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+            display: none;  
+
+        }
+        .popup{
+            background-color: white;
+            padding: 30px;
+            border: 5px dashed black;
+            position: relative;
+
+        }
+        .close-icon{
+            position: absolute;
+            color: red;
+            font-size: 20px;
+            right: 10px;
+            top: 5px;
+            cursor: pointer;
+        }
+
+        .popup span{
+            color: aqua;
+        }
+    </style>
+    <main>
+        <section class="popup-body">
+            <div>
+                <h2>We have a new offer! check it out </h2>
+                <button id="btn">Check Offer!</button>
+            </div>
+
+
+        </section>
+
+        <div class="overlay">
+            <div class="popup">
+                <div class="close-icon">X</div>
+                <h2>Use Coupon <span>Happy20</span>to get 40% Offer!</h2>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script>
+        //when click button open popup !
+        //overlay crose icon click out popup.
+
+        const btn = document.getElementById("btn");
+         const overlay = document.querySelector(".overlay")
+        const closeIcon = document.querySelector(".close-icon");
+        // const popupHeading = document.querySelector(".popup-body h2");
+
+        btn.addEventListener("click", () => {
+            console.log("clicked!");
+            overlay.style.display = "flex";
+        });
+
+        closeIcon.addEventListener("click", () => {
+            console.log("clicked!");
+            overlay.style.display = "none";
+        });
+           
+        
+
+
+
+        //querySelector using for jS Style .
+
+        // btn.style.background = "red";
+        // btn.style.color = "#fff";
+        // btn.style.padding ="5px 10px";
+
+        // document.querySelector(".popup-body h2").style.background = "gray";
+        
+
+
+        </script>
+</body>
+</html>
