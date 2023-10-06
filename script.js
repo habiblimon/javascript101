@@ -1,16 +1,16 @@
 //Task 1: Hello World with Variables
 //console.log("Hello");
 
-var greeting = "Hello!";
-console.log(greeting);
-console.log(typeof greeting);
+var greeting3 = "Hello!";
+console.log(greeting3);
+console.log(typeof greeting3);
 
 
 var name = " Habib Limon";
 
-console.log(greeting+" "+name);
+console.log(greeting3+" "+name);
 
-var all =greeting+name;
+var all =greeting3+name;
 console.log(all);
 console.log(typeof all);
 

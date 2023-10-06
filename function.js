@@ -74,5 +74,39 @@ function temeratureCount(temperature){
 console.log("ADD :",add(15,20));
 
 
+// //Arrow function 
+// const addNumbers = (a, b) => a+b; // => maneh  return . 
+// console.log("Arrow function ADD:", addNumbers(10,12));
+
+
+const addNumbers = (a, b, c) => {
+    let total = a+b+c;
+    return total;
+}; 
+console.log("Arrow function ADD:", addNumbers(10,12, 8));
+
+
+//condition ? ________ : __________
+const greeting = (person) =>{
+    let name = person ? person : "stranger";
+    return `Hello ${name}`;
+}
+
+console.log(greeting("Shakib AL Hasan"));
+
+
+const userAuthenication = (user) =>{
+    let auth = user ? `${user} is log in` : "in valied ";
+    return auth;
+}
+
+let userV =userAuthenication ("habib limon");
+console.log(userV);
+
+
+
+
+
+
 
 

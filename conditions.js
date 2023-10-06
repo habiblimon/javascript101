@@ -52,3 +52,10 @@ if(averageMark >=90){
     console.log("B")
 }
 
+
+
+
+
+//condition ? ________ : __________
+idDarkMode = true;
+ idDarkMode === true ? console.log("Dark Moode enable ") : console.log("Dark Mode disabled !");
