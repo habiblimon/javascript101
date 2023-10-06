@@ -1,3 +1,5 @@
+console.log("*** Javascript string ***");
+
 //string  variableName.length = count all word with space .
 
 let stringValue =""; 
