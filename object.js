@@ -1,5 +1,5 @@
 //object .....
-
+console.log("*** JAVASCRIPT Object ***")
 
 
 const student = {

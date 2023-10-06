@@ -1,3 +1,5 @@
+console.log("*** JAVASCRIPT Function ***");
+
 // for (let count=1; count<=10; count++){
 //     console.log(count);
 // }
@@ -5,15 +7,17 @@
 
 //..continue ....
 
-//write our fist Function
+//write our first Function
 function forLoop(){
    // console.log("Fast Value :", 10);
-   for (let count=1; count<=10; count++){
+   for (let count=1; count<=5; count++){
     console.log("for loop :", count);
 }
 }
 
 forLoop();
+
+
 
 //write a funtion that print out your name 
 function userNameGenerator(){
@@ -33,7 +37,8 @@ function forLoop2(firstCount, lastCount){
     }
 }
 
-forLoop2("2", "6")
+forLoop2("2", "6");
+forLoop2("1", "2");
 
 
 
