@@ -1,3 +1,5 @@
+console.log("***JAVASCRIPT Conditions JS ***");
+
 
 // if else , else if (condition)
 
@@ -14,6 +16,12 @@ if (temperature > 30){
 }else{
     console.log("Weathe is Normal");
 }
+
+let ageH = 35;
+let person = "Habib";
+
+let sentenceH = `${person} is ${ageH} years old use back {$} `;
+console.log(sentenceH);
 
 
 //course -> Math, English, Science
