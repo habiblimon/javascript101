@@ -47,7 +47,9 @@ const wordCounterHandler = () =>{
             let warning = document.querySelector(".warning");
             warning.classList.add("warning-visible");
 
-        }, 10000);
+        }, 1000);
+
+        
     }
     
 
