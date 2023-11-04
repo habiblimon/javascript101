@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 40px;
+    }
+</style>
+<body>
+   
+    <form>
+        <label for="">Type</label>
+        <input type="text" placeholder="type anything......">
+
+    </form>
+
+    <h4 id="output">test output</h4>
+
+
+
+    <script>
+        const form = document.querySelector("form"),
+        input = document.querySelector("input"),
+        h4 = document.querySelector("h4");
+
+        let localItem = localStorage.getItem("item");
+        h4.innerHTML = localStorage.getItem("item") ? localItem 
+        : "Nothing Found ...";
+
+
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            
+
+            let newValue = input.value;
+            h4.innerHTML = newValue;
+            input.value ="";
+
+            //send data to localstore
+            localStorage.setItem("item", newValue);
+
+
+
+        })
+    </script>
+</body>
+</html>
