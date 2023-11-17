@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Topic</title>
+</head>
+<body>
+    <style>
+        .all-comments{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            
+        }
+        .post{
+            background-color: aliceblue;
+            padding: 10px;
+        }
+    </style>
+    
+   <section class="all-comments">
+    <!-- <div class="post">
+        <h5>Post ID</h5>
+        <h2>Post title </h2>
+        <p>Post paragraph</p>
+    </div> -->
+   </section>
+
+
+
+   <script>
+    function fetchApi(){
+        fetch("https://jsonplaceholder.typicode.com/comments")
+        .then((res) => res.json()
+        .then(comment => displayComments(comment.slice(0, 10))));
+    }
+
+    function displayComments(comments){
+        //console.log(comments);
+        let commetDiv = document.querySelector(".all-comments");
+
+        comments.forEach((data) =>{
+            commetDiv.innerHTML +=`
+            <div class="post">
+                <h5>${data.email}</h5>
+                <h2>${data.name} </h2>
+                <p>${data.body}</p>
+            </div>
+            `;
+        });
+    }
+    fetchApi();
+   </script>
+
+
+</body>
+</html>
+
+

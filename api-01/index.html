@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Topic</title>
+</head>
+<body>
+    <style>
+        .all-posts{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+    </style>
+    
+   <section class="all-posts">
+    <!-- <div class="post">
+        <h5>Post ID</h5>
+        <h2>Post title </h2>
+        <p>Post paragraph</p>
+    </div> -->
+   </section>
+
+
+
+   <script>
+    // Fetch API from JSON placeholder
+
+    function fetchApi(){
+        fetch("https://jsonplaceholder.typicode.com/posts")
+        .then((res) => res.json())
+        .then((post) => displayPosts(post));
+    }
+
+    //display posts
+    function displayPosts(post){
+        console.log("display post : -- ", post);
+        post.forEach((post) => {
+           // console.log(post);
+
+           let postbody = document.querySelector(".all-posts");
+           postbody.innerHTML +=`
+                <div class="post">
+    
+                    <h5>${post.id}</h5>
+                    <h2>${post.title} </h2>
+                    <p>${post.body}</p>
+
+                </div>
+               
+           `
+        });
+    }
+
+    fetchApi();
+
+
+
+
+   </script>
+
+
+</body>
+</html>
+
+
