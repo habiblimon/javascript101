@@ -5,11 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../dist/output.css">
-</head>
-<body>
+
     
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="bg-gray-800">
+    
+<div class="container mx-auto text-center">
+    <h1 class="text-4xl font-bold text-white my-10">Search for your Meal 🔍 
+        </h1>
+
+    <div class="bg-white w-1/2 mx-auto p-2 border rounded-xl flex justify-between gap-2">
+        <input type="text" name="" id="input" placeholder="Ex....Chicken" class="p-4 w-full rounded-xl border-transparent">
+        <button class="bg-orange-500 hover:bg-orange-700 text-white px-4 py-2 rounded-xl" id="search">Search</button>
+    </div>
+
+</div>
+
+<div class="container mx-auto border border-gray-600 h-[600px] rounded-xl mt-5 p-4">
+    <h2 id="noMeal" class="text-gray-300 text-center text-4xl mt-16 font-semibold capitalize">No Meal to Show !  🥺</h2>
+    <div class="meal-wrapper grid grid-cols-4 gap-5 rounded-xl" >
+        <div class="meal-box border border-gray-500 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqkqahrffMGasUjXJQB2VQP_l8DqpVHUbjw&usqp=CAU" alt="" class="rounded h-[200px] w-full object-cover" />
+            <h3>Leblebi Soup</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto mollitia odio molestias nisi magnam vero saepe consectetur numquam soluta sequi! Amet corporis distinctio est nisi maxime modi quo ipsa iure.</p>
+            <p><span>Tunisian</span><span>Vegetarian</span></p>
+
+        </div>
+
+        <div class="meal-box border border-gray-500 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqkqahrffMGasUjXJQB2VQP_l8DqpVHUbjw&usqp=CAU" alt="" class="rounded h-[200px] w-full object-cover" />
+            <h3>Leblebi Soup</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto mollitia odio molestias nisi magnam vero saepe consectetur numquam soluta sequi! Amet corporis distinctio est nisi maxime modi quo ipsa iure.</p>
+            <p><span>Tunisian</span><span>Vegetarian</span></p>
+
+        </div>
+
+        <div class="meal-box border border-gray-500 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqkqahrffMGasUjXJQB2VQP_l8DqpVHUbjw&usqp=CAU" alt="" class="rounded h-[200px] w-full object-cover" />
+            <h3>Leblebi Soup</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto mollitia odio molestias nisi magnam vero saepe consectetur numquam soluta sequi! Amet corporis distinctio est nisi maxime modi quo ipsa iure.</p>
+            <p><span>Tunisian</span><span>Vegetarian</span></p>
+
+        </div>
+
+        <div class="meal-box border border-gray-500 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqkqahrffMGasUjXJQB2VQP_l8DqpVHUbjw&usqp=CAU" alt="" class="rounded h-[200px] w-full object-cover" />
+            <h3>Leblebi Soup</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto mollitia odio molestias nisi magnam vero saepe consectetur numquam soluta sequi! Amet corporis distinctio est nisi maxime modi quo ipsa iure.</p>
+            <p><span>Tunisian</span><span>Vegetarian</span></p>
+
+        </div>
+    </div>
+</div>
 
 
-    <h2 class="text-7xl text-emerald-700">Habib </h2>
 </body>
 </html>
